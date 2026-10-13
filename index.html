@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#4b1720">
+<meta name="description" content="The Catholic Faith — a multilingual guide to the Holy Mass, Catholic prayers, sacraments, teachings, and the liturgical year.">
+<title>The Catholic Faith | Faith, Worship & Knowledge</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="#home" aria-label="The Catholic Faith home">
+    <span class="brand-mark">✠</span><span><strong>The Catholic Faith</strong><small>FAITH · WORSHIP · KNOWLEDGE</small></span>
+  </a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+  <nav id="mainNav">
+    <a href="#mass" data-i18n="navMass">Holy Mass</a>
+    <a href="#daily" data-i18n="navDaily">Daily Guide</a>
+    <a href="#prayers" data-i18n="navPrayers">Prayers</a>
+    <a href="#sacraments" data-i18n="navSacraments">Sacraments</a>
+    <a href="#teachings" data-i18n="navTeachings">Teachings</a>
+    <button class="nav-admin" id="openAdmin">Admin</button>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="eyebrow" data-i18n="eyebrow">A GUIDE TO THE CATHOLIC FAITH</p>
+    <h1 data-i18n="heroTitle">Discover the beauty of the Catholic faith.</h1>
+    <p class="hero-copy" data-i18n="heroCopy">Explore the Holy Mass, daily Scripture, sacred traditions, prayers, and the teachings of the Church — all in one place.</p>
+    <div class="hero-actions">
+      <a class="button button-gold" href="#mass" data-i18n="exploreMass">Explore the Mass</a>
+      <a class="button button-outline" href="#daily" data-i18n="todayGuide">Today's guide</a>
+    </div>
+    <div class="language-picker">
+      <label for="languageSelect" data-i18n="languageLabel">Choose language</label>
+      <select id="languageSelect" aria-label="Choose language">
+        <option value="en">English</option><option value="ig">Igbo</option><option value="la">Latin</option>
+      </select>
+    </div>
+  </div>
+</section>
+
+<section class="welcome section-wrap">
+  <div class="section-heading">
+    <p class="eyebrow">WELCOME</p>
+    <h2 data-i18n="welcomeTitle">One faith, a lifetime of discovery.</h2>
+    <p data-i18n="welcomeCopy">A friendly starting point for Catholics, people exploring Catholicism, catechists, families, and anyone who wants to understand the Church more deeply.</p>
+  </div>
+  <div class="feature-grid">
+    <article class="feature-card"><span class="feature-icon">✝</span><h3 data-i18n="feature1Title">Understand the Mass</h3><p data-i18n="feature1Copy">Follow each part of the liturgy and learn the people's responses.</p><a href="#mass" data-i18n="learnMore">Learn more →</a></article>
+    <article class="feature-card"><span class="feature-icon">☼</span><h3 data-i18n="feature2Title">Pray every day</h3><p data-i18n="feature2Copy">Find traditional prayers and simple guides for personal devotion.</p><a href="#prayers" data-i18n="learnMore">Learn more →</a></article>
+    <article class="feature-card"><span class="feature-icon">❖</span><h3 data-i18n="feature3Title">Grow in faith</h3><p data-i18n="feature3Copy">Explore Scripture, sacraments, saints, and Catholic teaching.</p><a href="#teachings" data-i18n="learnMore">Learn more →</a></article>
+  </div>
+</section>
+
+<section class="daily-band" id="daily">
+  <div class="section-wrap daily-layout">
+    <div>
+      <p class="eyebrow">THE LITURGICAL YEAR</p>
+      <h2 data-i18n="dailyTitle">Your daily Catholic guide</h2>
+      <p data-i18n="dailyCopy">The Church's calendar changes throughout the year. Check the date, season, celebration, and liturgical colour, then use the official reading resources linked here.</p>
+      <div class="date-card">
+        <div class="date-icon">✦</div><div><span id="todayDate"></span><strong id="seasonTitle">Liturgical calendar</strong><small id="seasonNote">Verify local celebrations with your diocese.</small></div>
+      </div>
+    </div>
+    <div class="colour-panel">
+      <h3>Liturgical colours</h3>
+      <div class="colour-list">
+        <div><i class="swatch green"></i><span><b>Green</b><small>Ordinary Time</small></span></div>
+        <div><i class="swatch white"></i><span><b>White / Gold</b><small>Feasts of the Lord and saints, according to the calendar</small></span></div>
+        <div><i class="swatch red"></i><span><b>Red</b><small>Pentecost, martyrs, and celebrations of the Passion</small></span></div>
+        <div><i class="swatch purple"></i><span><b>Violet</b><small>Advent and Lent; also certain penitential occasions</small></span></div>
+        <div><i class="swatch rose"></i><span><b>Rose</b><small>Gaudete Sunday and Laetare Sunday where permitted</small></span></div>
+      </div>
+      <p class="small-note">Colour guidance is introductory. The proper colour and celebration depend on the approved calendar for the local Church.</p>
+    </div>
+  </div>
+  <div class="section-wrap readings-box">
+    <div><h3>Daily readings</h3><p>For accurate readings and calendar information, consult a trusted official source.</p></div>
+    <div class="link-stack">
+      <a href="https://bible.usccb.org/readings/calendar" target="_blank" rel="noopener">USCCB Daily Readings ↗</a>
+      <a href="https://www.vatican.va/" target="_blank" rel="noopener">The Holy See / Vatican ↗</a>
+      <a href="https://www.catholicculture.org/culture/liturgicalyear/" target="_blank" rel="noopener">Liturgical year resources ↗</a>
+    </div>
+  </div>
+</section>
+
+<section class="section-wrap" id="mass">
+  <div class="section-heading">
+    <p class="eyebrow">THE EUCHARISTIC CELEBRATION</p>
+    <h2 data-i18n="massTitle">The Holy Mass, step by step</h2>
+    <p data-i18n="massCopy">The Mass has two main parts — the Liturgy of the Word and the Liturgy of the Eucharist — framed by the introductory and concluding rites.</p>
+  </div>
+  <div class="mass-grid">
+    <article class="mass-step"><span>01</span><div><h3>Introductory Rites</h3><p>Entrance procession and song, Sign of the Cross, greeting, Penitential Act, Kyrie when appropriate, Gloria on prescribed days, and Collect.</p><details><summary>People's response examples</summary><p><b>Priest:</b> “The Lord be with you.”<br><b>People:</b> “And with your spirit.”<br><small>Use the approved wording of your local missal.</small></p></details></div></article>
+    <article class="mass-step"><span>02</span><div><h3>Liturgy of the Word</h3><p>First reading, Responsorial Psalm, second reading on Sundays and solemnities, Gospel acclamation, Gospel, homily, Creed when prescribed, and Prayer of the Faithful.</p><details><summary>People's response examples</summary><p><b>Reader:</b> “The word of the Lord.”<br><b>People:</b> “Thanks be to God.”<br><b>Before the Gospel:</b> “Glory to you, O Lord.”</p></details></div></article>
+    <article class="mass-step"><span>03</span><div><h3>Liturgy of the Eucharist</h3><p>Preparation of the gifts, prayer over the offerings, Preface, Holy Holy, Eucharistic Prayer, consecration, Mystery of Faith, doxology, and Great Amen.</p><details><summary>People's response examples</summary><p><b>All:</b> “Holy, Holy, Holy Lord God of hosts…”<br><b>All:</b> “Amen.” at the conclusion of the Eucharistic Prayer.</p></details></div></article>
+    <article class="mass-step"><span>04</span><div><h3>Communion Rite</h3><p>Lord's Prayer, sign of peace where provided, breaking of the bread, Lamb of God, Communion, silence or hymn, and Prayer after Communion.</p><details><summary>Before receiving Communion</summary><p>The communicant responds “Amen” to “The Body of Christ.” Follow the guidance of your parish and the Church's norms for receiving Communion.</p></details></div></article>
+    <article class="mass-step"><span>05</span><div><h3>Concluding Rites</h3><p>Brief announcements where appropriate, greeting and blessing, dismissal, and the procession out.</p><details><summary>Dismissal response</summary><p><b>Deacon or priest:</b> “Go forth, the Mass is ended” (wording varies by approved translation).<br><b>People:</b> “Thanks be to God.”</p></details></div></article>
+  </div>
+  <div class="notice"><b>Important:</b> This is an educational overview, not a substitute for the approved Roman Missal or the instructions of your priest. Exact wording and options vary by approved liturgical edition and local norms.</div>
+</section>
+
+<section class="prayer-section" id="prayers">
+  <div class="section-wrap">
+    <div class="section-heading light-heading"><p class="eyebrow">A LIFE OF PRAYER</p><h2 data-i18n="prayersTitle">Prayers for everyday life</h2><p data-i18n="prayersCopy">Begin with familiar prayers, then explore devotions and the prayer traditions of the Church.</p></div>
+    <div class="prayer-grid">
+      <article><span>✧</span><h3>Sign of the Cross</h3><p>In the name of the Father, and of the Son, and of the Holy Spirit. Amen.</p><p class="translation">Latin: In nomine Patris, et Filii, et Spiritus Sancti. Amen.</p></article>
+      <article><span>✧</span><h3>Our Father</h3><p>Our Father, who art in heaven, hallowed be thy name; thy kingdom come; thy will be done on earth as it is in heaven…</p><a href="https://www.vatican.va/" target="_blank" rel="noopener">Consult Vatican resources ↗</a></article>
+      <article><span>✧</span><h3>The Holy Rosary</h3><p>A meditative prayer reflecting on the joyful, luminous, sorrowful, and glorious mysteries of Christ's life.</p><p class="translation">Learn the mysteries and pray with your parish or family.</p></article>
+      <article><span>✧</span><h3>Morning & evening prayer</h3><p>Offer the day to God, give thanks, ask for grace, and reflect on the day's blessings.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section-wrap" id="sacraments">
+  <div class="section-heading"><p class="eyebrow">SIGNS OF GRACE</p><h2 data-i18n="sacramentsTitle">The seven sacraments</h2><p>The sacraments are central to Catholic life. Explore their meaning and the preparation normally involved.</p></div>
+  <div class="sacrament-grid">
+    <article><span>01</span><h3>Baptism</h3><p>New birth in Christ and entry into the Church.</p></article>
+    <article><span>02</span><h3>Confirmation</h3><p>Strengthening by the gift of the Holy Spirit.</p></article>
+    <article><span>03</span><h3>Eucharist</h3><p>The sacrament at the heart of Catholic worship.</p></article>
+    <article><span>04</span><h3>Penance & Reconciliation</h3><p>Forgiveness and reconciliation with God and the Church.</p></article>
+    <article><span>05</span><h3>Anointing of the Sick</h3><p>Grace, comfort, and strength in serious illness or old age.</p></article>
+    <article><span>06</span><h3>Holy Orders</h3><p>Ordination to the diaconate, priesthood, or episcopate.</p></article>
+    <article><span>07</span><h3>Matrimony</h3><p>The covenant of marriage between a baptized man and woman.</p></article>
+  </div>
+</section>
+
+<section class="teachings-band" id="teachings">
+  <div class="section-wrap teachings-layout">
+    <div><p class="eyebrow">LEARN AND GROW</p><h2 data-i18n="teachingsTitle">Explore Catholic teaching</h2><p data-i18n="teachingsCopy">Start with the Creed, the Bible, the Catechism, the lives of the saints, and the history and structure of the Church.</p></div>
+    <div class="resource-links">
+      <a href="https://www.vatican.va/archive/ENG0015/_INDEX.HTM" target="_blank" rel="noopener"><span><b>Catechism of the Catholic Church</b><small>Official Vatican text in English</small></span><strong>↗</strong></a>
+      <a href="https://www.vatican.va/archive/ENG0015/_INDEX.HTM" target="_blank" rel="noopener"><span><b>Faith and morals</b><small>Learn from the Church's teaching</small></span><strong>↗</strong></a>
+      <a href="https://www.vatican.va/content/vatican/en.html" target="_blank" rel="noopener"><span><b>The Holy See</b><small>Official Vatican news and documents</small></span><strong>↗</strong></a>
+    </div>
+  </div>
+</section>
+
+<section class="section-wrap about-section">
+  <div class="about-card"><div class="about-symbol">✠</div><div><p class="eyebrow">OUR MISSION</p><h2>Helping people know and love the Catholic faith.</h2><p>The Catholic Faith is an independent educational project. It is not an official website of the Vatican, a diocese, or a parish. Content should be checked against official Church sources and approved local liturgical books.</p></div></div>
+</section>
+</main>
+
+<footer>
+  <div class="footer-inner"><a class="brand footer-brand" href="#home"><span class="brand-mark">✠</span><span><strong>The Catholic Faith</strong><small>FAITH · WORSHIP · KNOWLEDGE</small></span></a><p>For learning, prayer, and deeper understanding.</p><div class="footer-links"><a href="#mass">Holy Mass</a><a href="#prayers">Prayers</a><a href="#teachings">Teachings</a><button id="footerAdmin">Owner access</button></div></div>
+  <div class="copyright">© <span id="year"></span> The Catholic Faith · Educational resource</div>
+</footer>
+
+<div class="modal-backdrop" id="adminModal" hidden>
+  <section class="admin-modal" role="dialog" aria-modal="true" aria-labelledby="adminTitle">
+    <button class="modal-close" id="closeAdmin" aria-label="Close">×</button>
+    <p class="eyebrow">OWNER TOOLS · DEMO</p><h2 id="adminTitle">Website admin preview</h2>
+    <p>This starter site's admin area is a local demo only. It does not have secure login or publish edits to the internet.</p>
+    <label for="announcement">Draft a homepage announcement</label>
+    <textarea id="announcement" rows="3" placeholder="Write an announcement..."></textarea>
+    <button class="button button-burgundy" id="saveAnnouncement">Save draft on this device</button>
+    <p id="saveStatus" class="small-note" aria-live="polite"></p>
+    <div class="admin-warning"><b>Before public launch:</b> add real authentication and a secure content system. Never use this demo as a secure admin login or store passwords in this page.</div>
+  </section>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
